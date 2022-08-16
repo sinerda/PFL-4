@@ -1,0 +1,97 @@
+@import "vars";
+@import "fonts";
+@import "reset";
+@import "libs";
+@import "global";
+
+.header {
+  background: $bg-main;
+}
+.header__inner {
+  display: flex;
+  justify-content: space-between;
+}
+.header__main {
+  display: flex;
+  align-items: center;
+}
+.header__menu {
+}
+.header__menu-list {
+  display: flex;
+  justify-content: center;
+}
+.header__menu-item {
+  margin: 0 15px;
+}
+.header__menu-link {
+  @extend %menu;
+  color: #fff;
+}
+.header__btn-list {
+  display: flex;
+  align-items: center;
+  margin-left: 25px;
+}
+.header__btn-item {
+  margin-left: 10px;
+}
+.header__button {
+  background: $main;
+  @extend %menu;
+  color: $black;
+  width: 173px;
+  height: 50px;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+.header__button--login {
+  width: 129px;
+  background: $bg-main;
+  color: #fff;
+  border: 1px solid rgba(255, 187, 54, 1);
+  font-weight: 300;
+}
+
+.footer {
+  background: $bg-main;
+  text-align: center;
+}
+.footer__top {
+  background: $additional-1;
+  display: flex;
+  justify-content: center;
+}
+.footer__menu {
+  height: 60px;
+}
+.footer__menu-list {
+  height: inherit;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer__menu-item {
+  margin: 0 44px;
+}
+.footer__menu-link {
+  @extend %menu;
+  color: #fff;
+}
+.footer__main {
+  margin: 30px 0 50px;
+}
+.logo {
+  margin: 30px 0;
+  display: inline-block;
+}
+.footer__text {
+  @extend %small;
+  color: $gray1;
+  max-width: 900px;
+  display: inline-block;
+}
+.footer__text p {
+  margin-bottom: 10px;
+}
