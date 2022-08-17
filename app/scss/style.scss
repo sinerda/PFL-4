@@ -200,3 +200,27 @@
     cursor: pointer;
   }
 }
+
+.privacy__text {
+  padding-bottom: 10px;
+  @extend %small;
+  & a {
+    color: $additional;
+  }
+}
+.privacy__sub-title {
+  padding-bottom: 10px;
+  @extend %h4;
+}
+.privacy__text--with-img {
+  display: flex;
+  padding-bottom: 0;
+}
+.privacy__img {
+}
+
+.game__img {
+  object-fit: cover;
+  object-position: center;
+  width: 100%;
+}
