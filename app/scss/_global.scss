@@ -31,16 +31,4 @@ body {
 .container-fluid {
 	max-width: 1440px;
 	margin: 0 auto;
-	padding: 0 15px;
-}
-
-.title {
-	padding: 44px 20px 40px;
-	text-align: center;
-	background: $main;
-	margin-bottom: 60px;
-	&__text {
-		@extend %h1;
-		color: $bg-main;
-	}
 }
