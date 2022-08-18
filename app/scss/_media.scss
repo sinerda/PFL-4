@@ -1,0 +1,252 @@
+@media (max-width: 1140px) {
+  .menu__list,
+  .menu__btn-list {
+    display: none;
+  }
+  .menu {
+    justify-content: center;
+  }
+  .header-slider__content {
+    margin-right: 40px;
+  }
+  .header-slider__bg-img {
+    object-position: -220px;
+  }
+  .header-slider__inner {
+    padding-top: 182px;
+  }
+  .header-slider__title {
+    font-size: 30px;
+    line-height: 52px;
+  }
+  .header-slider__text {
+    font-size: 19px;
+    line-height: 22px;
+  }
+  .about__items-list {
+    grid-template-columns: 300px 350px 300px;
+  }
+  .about__text {
+    padding: 0 20px;
+  }
+  .privacy__text--with-img {
+    flex-wrap: wrap;
+  }
+  .contact__img {
+    max-width: 550px;
+    right: 20px;
+  }
+}
+
+@media (max-width: 989px) {
+  .title {
+    padding: 24px 20px 20px;
+    font-size: 40px;
+    line-height: 65px;
+  }
+  .about__items-list {
+    grid-template-columns: 230px 270px 230px;
+  }
+  .contact__form {
+    margin-right: 0;
+  }
+  .contact__img {
+    max-width: 520px;
+  }
+}
+
+@media (max-width: 789px) {
+  .logo {
+    min-width: auto;
+    & img {
+      width: 210px;
+    }
+  }
+  .title {
+    padding: 9px 20px 5px;
+    font-size: 33px;
+    line-height: 55px;
+  }
+  .header-slider__inner {
+    padding-top: 212px;
+  }
+  .header-slider__content {
+    margin-right: 10px;
+    width: 412px;
+  }
+  .header-slider__title {
+    font-size: 26px;
+    line-height: 35px;
+  }
+  .header-slider__text {
+    font-size: 18px;
+  }
+  .title,
+  .about__items-list {
+    margin-bottom: 40px;
+  }
+  .about__items-list {
+    grid-template-columns: 190px 220px 190px;
+  }
+  .about__item-img {
+    width: 96px;
+  }
+  .about__item-title {
+    font-size: 17px;
+    line-height: 23px;
+  }
+  .about__item-text {
+    font-size: 14px;
+    line-height: 19px;
+  }
+  .about__text {
+    font-size: 17px;
+    line-height: 23px;
+  }
+  .footer__menu-item {
+    margin: 0 22px;
+  }
+  .contact__inner {
+    justify-content: center;
+    margin-bottom: 50px;
+  }
+  .contact__img {
+    display: none;
+  }
+}
+
+@media (max-width: 649px) {
+  .about__items-list {
+    grid-template-columns: 340px;
+    margin-bottom: 10px;
+  }
+  .about__item {
+    margin-bottom: 50px;
+  }
+  .about__item-img {
+    margin-bottom: 10px;
+  }
+  .footer__menu-link {
+    font-size: 19px;
+  }
+}
+
+@media (max-width: 559px) {
+  .footer__menu-item {
+    margin: 0 13px;
+  }
+}
+
+@media (max-width: 490px) {
+  .footer__menu {
+    height: 94px;
+    padding: 0 30px;
+    padding-top: 14px;
+    margin-bottom: 24px;
+  }
+  .footer__menu-list {
+    flex-wrap: wrap;
+    align-content: center;
+  }
+  .footer__menu-item {
+    margin: 10px 25px;
+  }
+  .contact__form {
+    min-width: auto;
+    width: 100%;
+  }
+}
+
+@media (max-width: 401px) {
+  .menu {
+    height: 60px;
+    padding: 14px 10px;
+  }
+  .logo img {
+    width: 151px;
+  }
+  .header-slider__bg-img {
+    object-position: unset;
+    height: 640px;
+    object-fit: cover;
+  }
+  .header-slider__inner {
+    padding-top: 85px;
+  }
+  .header-slider__title {
+    font-size: 26px;
+    line-height: 44px;
+  }
+  .header-slider__text {
+    font-size: 16px;
+    line-height: 22px;
+    margin-bottom: 25px;
+  }
+  .header-slider__btn {
+    width: auto;
+    height: auto;
+    padding: 10px 50px;
+    font-size: 17px;
+    line-height: 23px;
+  }
+  .title {
+    font-size: 26px;
+    line-height: 44px;
+  }
+  .about__items-list {
+    grid-template-columns: 260px;
+  }
+  .about__item-title {
+    font-size: 16px;
+    line-height: 22px;
+  }
+  .about__item-text {
+    font-size: 14px;
+    line-height: 19px;
+  }
+  .about__text {
+    font-size: 16px;
+    line-height: 22px;
+  }
+  .footer__menu {
+    padding: 14px 0 0 0;
+  }
+  .footer__text {
+    font-size: 13px;
+    line-height: 18px;
+  }
+  .privacy__text {
+    font-size: 14px;
+    line-height: 19px;
+  }
+  .privacy__sub-title {
+    font-size: 18px;
+    line-height: 25px;
+  }
+  .contact__form-title {
+    font-size: 21px;
+    line-height: 29px;
+  }
+  .contact__input,
+  .contact__textarea {
+    font-size: 14px;
+    line-height: 19px;
+    &::placeholder {
+      font-size: 14px;
+      line-height: 19px;
+    }
+  }
+  .contact__button {
+    width: auto;
+    height: auto;
+    padding: 10px 50px;
+    font-size: 17px;
+    line-height: 23px;
+  }
+}
+
+@media (max-width: 342px) {
+  .footer__menu-item {
+    margin: 10px 12px;
+  }
+}
