@@ -51,9 +51,16 @@
       <!-- <div class="header-slider__wrap"> -->
       <div class="header-slider">
         <div class="header-slider__item">
-          <img class="header-slider__bg-img" srcset="images/content/banner-mobile-img-1.jpg 360w,
-            images/content/banner-img-1.jpg 1440w" sizes="(max-width: 401px) 360px, 1440px"
-            src="images/content/banner-img-1.jpg" alt="banner-img">
+          <!-- <img class="header-slider__bg-img" srcset="images/content/banner-mobile-img-1.jpg 360w,
+            images/content/banner-img-1.jpg 1440w" sizes="(max-width: 400px) 360px, 1440px"
+            src="images/content/banner-img-1.jpg" alt="banner-img"> -->
+          <!--  -->
+          <!--  -->
+          <picture>
+            <source srcset="images/content/banner-img-1.jpg" media="(min-width: 401px)" />
+            <img class="header-slider__bg-img" src="images/content/banner-mobile-img-1.jpg" alt="banner-img">
+          </picture>
+          <!--  -->
           <div class="header-slider__inner">
             <div class="header-slider__content">
               <h2 class="header-slider__title">
@@ -126,25 +133,33 @@
       <!-- </div> -->
       <div class="header__list-items">
         <div class="header__item">
-          <img class="header__item-icon" src="images/header-icon-1.svg" alt="header-icon">
+          <img class="header__item-icon" srcset="images/header-mobile-icon-1.svg 90w,
+            images/header-icon-1.svg 112w" sizes="(max-width: 401px) 90px, 112px" src="images/header-icon-1.svg"
+            alt="header-icon">
           <p class="header__item-title">
             NEW SOCIAL CASINO
           </p>
         </div>
         <div class="header__item">
-          <img class="header__item-icon" src="images/header-icon-2.svg" alt="header-icon">
+          <img class="header__item-icon" srcset="images/header-mobile-icon-2.svg 90w,
+            images/header-icon-2.svg 112w" sizes="(max-width: 401px) 90px, 112px" src="images/header-icon-2.svg"
+            alt="header-icon">
           <p class="header__item-title">
             FREE POKIES & SLOTS
           </p>
         </div>
         <div class="header__item">
-          <img class="header__item-icon" src="images/header-icon-3.svg" alt="header-icon">
+          <img class="header__item-icon" srcset="images/header-mobile-icon-3.svg 90w,
+            images/header-icon-3.svg 112w" sizes="(max-width: 401px) 90px, 112px" src="images/header-icon-3.svg"
+            alt="header-icon">
           <p class="header__item-title">
             FREE GAMES
           </p>
         </div>
         <div class="header__item">
-          <img class="header__item-icon" src="images/header-icon-4.svg" alt="header-icon">
+          <img class="header__item-icon" srcset="images/header-mobile-icon-4.svg 90w,
+            images/header-icon-4.svg 112w" sizes="(max-width: 401px) 90px, 112px" src="images/header-icon-4.svg"
+            alt="header-icon">
           <p class="header__item-title">
             FREE ONLINE CASINO
           </p>
@@ -169,7 +184,7 @@
                 </div>
               </a>
             </div>
-            <div class="free-slots__item free-slots__item--big">
+            <div class="free-slots__item free-slots__item--big free-slots__item--interim-second">
               <a class="free-slots__item-link" href="game-screen.html">
                 <img class="free-slots__img" src="images/content/games-2.jpg" alt="games">
                 <div class="free-slots__item-hover">
@@ -180,7 +195,7 @@
                 </div>
               </a>
             </div>
-            <div class="free-slots__item free-slots__item--big">
+            <div class="free-slots__item free-slots__item--big free-slots__item--interim">
               <a class="free-slots__item-link" href="game-screen.html">
                 <img class="free-slots__img" src="images/content/games-3.jpg" alt="games">
                 <div class="free-slots__item-hover">

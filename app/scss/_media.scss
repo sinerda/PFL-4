@@ -1,3 +1,60 @@
+@media (max-width: 1545px) {
+  .welcome__info {
+    min-width: 576px;
+  }
+}
+@media (max-width: 1366px) {
+  .welcome__img {
+    max-width: 90%;
+    left: -430px;
+    top: 10px;
+  }
+}
+@media (max-width: 1204px) {
+  .free-slots__table-items {
+    grid-template-columns: repeat(4, 181px);
+    width: fit-content;
+    margin: 0 auto;
+  }
+  .free-slots__item--interim {
+    grid-column: initial;
+  }
+  .free-slots__item--interim .free-slots__item-title {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    text-transform: capitalize;
+    margin-bottom: 15px;
+  }
+  .free-slots__item--interim .free-slots__item-play {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 19px;
+    width: 119px;
+    height: 35px;
+    padding: 8px 5px;
+    border-radius: 50px;
+  }
+  .welcome__wrap {
+    height: 1074px;
+  }
+  .welcome__wrapper {
+    height: 955px;
+  }
+  .welcome__inner {
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .welcome__info {
+    max-width: 500px;
+  }
+  .welcome__img {
+    left: initial;
+    width: 900px;
+    top: 40px;
+    max-width: initial;
+  }
+}
 @media (max-width: 1140px) {
   .menu__list,
   .menu__btn-list {
@@ -44,6 +101,17 @@
     font-size: 40px;
     line-height: 65px;
   }
+  .welcome__wrap {
+    height: 874px;
+  }
+  .welcome__wrapper {
+    height: 805px;
+  }
+  .welcome__img {
+    width: 700px;
+    top: 0px;
+    left: -50px;
+  }
   .about__items-list {
     grid-template-columns: 230px 270px 230px;
   }
@@ -67,6 +135,10 @@
     font-size: 33px;
     line-height: 55px;
   }
+  .free-slots__title {
+    font-size: 30px;
+    line-height: 40px;
+  }
   .header-slider__inner {
     padding-top: 212px;
   }
@@ -80,6 +152,77 @@
   }
   .header-slider__text {
     font-size: 18px;
+  }
+  .header__list-items {
+    grid-template-columns: repeat(2, 242px);
+    margin: -50px auto 0;
+    width: fit-content;
+    position: relative;
+    z-index: 1;
+  }
+  .header__list-items::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    bottom: 0;
+    right: 50%;
+    width: 2px;
+    height: 100%;
+    background: rgba(255, 187, 54, 0.14);
+  }
+  .header__list-items::after {
+    position: absolute;
+    content: "";
+    top: 50%;
+    right: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: rgba(255, 187, 54, 0.14);
+  }
+  .header__item {
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    position: relative;
+    z-index: 5;
+  }
+  .header__item + .header__item {
+    border-left: none;
+  }
+  .header__item:nth-child(3)::after {
+    position: absolute;
+    content: "";
+    top: -9px;
+    right: -9px;
+    width: 20px;
+    height: 20px;
+    background: $bg-main;
+  }
+  .header__item-icon {
+    margin-bottom: 15px;
+  }
+  .free-slots__table-items {
+    grid-template-columns: repeat(2, 181px);
+  }
+  .free-slots__item--interim-second {
+    grid-column: initial;
+  }
+
+  .free-slots__item--interim-second .free-slots__item-title {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    text-transform: capitalize;
+    margin-bottom: 15px;
+  }
+  .free-slots__item--interim-second .free-slots__item-play {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 19px;
+    width: 119px;
+    height: 35px;
+    padding: 8px 5px;
+    border-radius: 50px;
   }
   .title,
   .about__items-list {
@@ -116,6 +259,28 @@
 }
 
 @media (max-width: 649px) {
+  .welcome__wrap {
+    height: 784px;
+  }
+  .welcome__wrapper {
+    height: 730px;
+  }
+  .welcome__info {
+    min-width: 450px;
+    width: 450px;
+  }
+  .welcome__title {
+    font-size: 33px;
+    line-height: 48px;
+  }
+  .welcome__text {
+    font-size: 16px;
+    line-height: 21px;
+  }
+  .welcome__img {
+    width: 600px;
+    left: -70px;
+  }
   .about__items-list {
     grid-template-columns: 340px;
     margin-bottom: 10px;
@@ -135,6 +300,22 @@
   .footer__menu-item {
     margin: 0 13px;
   }
+  .header__list-items {
+    grid-template-columns: repeat(2, 178px);
+  }
+  .header__item {
+    margin-top: 25px;
+    padding: 0;
+    justify-content: flex-start;
+  }
+  .header__item:nth-child(3)::after {
+    top: -34px;
+  }
+  .header__item-title {
+    line-height: 20px;
+    padding: 0 15px;
+    text-align: center;
+  }
 }
 
 @media (max-width: 490px) {
@@ -150,6 +331,24 @@
   }
   .footer__menu-item {
     margin: 10px 25px;
+  }
+  .welcome__wrap {
+    height: 714px;
+  }
+  .welcome__wrapper {
+    height: 690px;
+    padding: 30px 30px 0;
+  }
+  .welcome__info {
+    min-width: 360px;
+    width: 360px;
+  }
+  .welcome__title {
+    font-size: 28px;
+    line-height: 42px;
+  }
+  .welcome__img {
+    width: 420px;
   }
   .contact__form {
     min-width: auto;
@@ -189,9 +388,71 @@
     font-size: 17px;
     line-height: 23px;
   }
+  .header__list-items {
+    grid-template-columns: repeat(2, 150px);
+    margin-top: -80px;
+  }
+  .header__item {
+    height: 150px;
+  }
+  .header__item-title {
+    font-size: 14px;
+    line-height: 19px;
+    padding: 0 10px;
+  }
+  .free-slots__title {
+    margin: 30px 0;
+  }
+  .free-slots__table-items {
+    grid-template-columns: repeat(2, 139px);
+  }
+  .free-slots__img {
+    border-radius: 13px;
+  }
+  .free-slots__item-title,
+  .free-slots__item--interim .free-slots__item-title,
+  .free-slots__item--interim-second .free-slots__item-title {
+    font-size: 14px;
+    line-height: 17px;
+    margin-bottom: 10px;
+  }
+  .free-slots__item-play,
+  .free-slots__item--interim .free-slots__item-play,
+  .free-slots__item--interim-second .free-slots__item-play {
+    width: 105px;
+    height: 25px;
+    padding: 3px 5px;
+    font-size: 13px;
+    line-height: 18px;
+  }
   .title {
     font-size: 26px;
     line-height: 44px;
+  }
+  .free-slots__title {
+    font-size: 21px;
+    line-height: 29px;
+  }
+  .welcome__wrap {
+    height: 744px;
+  }
+  .welcome__wrapper {
+    height: 720px;
+  }
+  .welcome__info {
+    min-width: 260px;
+    width: 260px;
+  }
+  .welcome__title {
+    font-size: 26px;
+    line-height: 44px;
+  }
+  .welcome__text {
+    font-size: 14px;
+    line-height: 19px;
+  }
+  .welcome__img {
+    width: 410px;
   }
   .about__items-list {
     grid-template-columns: 260px;

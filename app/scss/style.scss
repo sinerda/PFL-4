@@ -11,7 +11,7 @@
 .menu {
   display: flex;
   justify-content: space-between;
-  padding: 30px 50px 0;
+  padding: 30px 50px;
   position: relative;
   z-index: 10;
   &__main {
@@ -123,6 +123,8 @@
   height: 525px;
   object-fit: cover;
   object-position: center;
+  position: relative;
+  top: -30px;
 }
 .header-slider__inner {
   display: flex;
@@ -164,12 +166,11 @@
 
 .header__list-items {
   margin-top: -50px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
 }
 .header__item {
-  width: 244px;
+  // width: 244px;
   height: 182px;
   display: flex;
   flex-direction: column;
@@ -275,7 +276,7 @@
 .welcome__wrapper {
   background: $main;
   height: 585px;
-  padding-top: 60px;
+  padding: 60px 30px 0;
 }
 .welcome__inner {
   display: flex;
