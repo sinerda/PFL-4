@@ -7,11 +7,27 @@
 .logo {
   display: inline-block;
   min-width: 244px;
+  position: relative;
+  // z-index: 5;
+  .menu--transparent &::before {
+    position: relative;
+    content: "";
+    top: 0px;
+    left: 90px;
+    right: 0;
+    bottom: 0;
+    width: 50px;
+    box-shadow: 9px 9px 97px 74px rgb(0 0 0 / 82%);
+    z-index: -1;
+  }
 }
 .logo--mobile-menu {
   display: none;
   position: absolute;
   bottom: 30px;
+  .menu--transparent &::before {
+    box-shadow: none;
+  }
 }
 .menu {
   display: flex;
@@ -74,14 +90,15 @@
   }
   &__btn-open {
     position: absolute;
-    width: 45px;
-    height: 45px;
+    width: 40px;
+    height: 40px;
     left: 40px;
     top: 35px;
     background-image: url(../images/menu-open.svg);
     background-repeat: no-repeat;
     background-position: center;
     background-color: transparent;
+    background-size: contain;
     border: none;
   }
   &__btn-close {

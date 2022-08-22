@@ -12,12 +12,21 @@
 }
 @media (max-width: 1204px) {
   .free-slots__table-items {
-    grid-template-columns: repeat(4, 181px);
+    grid-template-columns: repeat(8, 86px);
     width: fit-content;
     margin: 0 auto;
   }
+  .free-slots__item {
+    grid-column: span 2;
+  }
+  .free-slots__item--big {
+    grid-column: span 4;
+  }
+  .free-slots__item:nth-child(7) {
+    grid-column: -8/-6;
+  }
   .free-slots__item--interim {
-    grid-column: initial;
+    grid-column: span 2;
   }
   .free-slots__item--interim .free-slots__item-title {
     font-weight: 600;
@@ -57,7 +66,7 @@
 }
 @media (max-width: 1140px) {
   .menu {
-    justify-content: center;
+    justify-content: flex-end;
     &__btn-open,
     &__btn-close {
       display: block;
@@ -78,7 +87,7 @@
   }
 
   .menu__main--close {
-    transform: translateX(500%);
+    transform: translateX(200%);
   }
   .menu__list {
     flex-direction: column;
@@ -275,7 +284,19 @@
   .free-slots__table-items {
     grid-template-columns: repeat(2, 181px);
   }
+  .free-slots__item {
+    grid-column: initial;
+  }
+  .free-slots__item--big {
+    grid-column: span 2;
+  }
+  .free-slots__item--interim {
+    grid-column: initial;
+  }
   .free-slots__item--interim-second {
+    grid-column: initial;
+  }
+  .free-slots__item:nth-child(7) {
     grid-column: initial;
   }
 
@@ -437,6 +458,10 @@
   .menu {
     height: 60px;
     padding: 14px 10px;
+    justify-content: center;
+  }
+  .menu--transparent {
+    background-color: $bg-main;
   }
   .menu__main {
     padding: 120px 10px 30px;
@@ -446,6 +471,7 @@
     top: 10px;
     width: 40px;
     height: 40px;
+    background-size: auto;
   }
   .menu__btn-close {
     width: 40px;
@@ -489,9 +515,15 @@
     height: 15px;
     margin: 0 2.5px;
   }
-  .logo img {
-    width: 151px;
+  .logo {
+    .menu--transparent &::before {
+      box-shadow: none;
+    }
+    & img {
+      width: 151px;
+    }
   }
+
   .header-slider {
     top: -60px;
   }
@@ -641,5 +673,27 @@
 @media (max-width: 342px) {
   .footer__menu-item {
     margin: 10px 12px;
+  }
+}
+@media (max-height: 500px) and (orientation: landscape) {
+  .menu__main {
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    padding-bottom: 0;
+  }
+  .menu__item {
+    margin: 7px 0;
+  }
+  .logo--mobile-menu {
+    bottom: auto;
+    left: 30px;
+    top: 30px;
+  }
+  .menu__btn-list {
+    flex-direction: column;
+    margin-bottom: 0;
+  }
+  .menu__btn-item {
+    margin-bottom: 15px;
   }
 }
