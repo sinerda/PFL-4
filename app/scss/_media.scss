@@ -210,6 +210,10 @@
   .menu__btn-open {
     top: 30px;
   }
+  .pop-up-reg {
+    width: 97%;
+    padding: 55px 20px;
+  }
   .title {
     padding: 9px 20px 5px;
     font-size: 33px;
@@ -351,6 +355,9 @@
 }
 
 @media (max-width: 649px) {
+  .pop-up-reg__inner {
+    width: 90%;
+  }
   .welcome__wrap {
     height: 784px;
   }
@@ -392,6 +399,9 @@
   .menu__main {
     padding-top: 120px;
   }
+  .pop-up-login {
+    width: 97%;
+  }
   .footer__menu-item {
     margin: 0 13px;
   }
@@ -414,6 +424,9 @@
 }
 
 @media (max-width: 490px) {
+  .pop-up-login__inner {
+    width: 90%;
+  }
   .menu__btn-open {
     left: 25px;
   }
@@ -462,6 +475,58 @@
   }
   .menu--transparent {
     background-color: $bg-main;
+  }
+  .pop-up-reg,
+  .pop-up-login {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+  }
+  .pop-up-reg__title,
+  .pop-up-login__title {
+    font-size: 21px;
+    line-height: 29px;
+  }
+  .pop-up-reg__inner,
+  .pop-up-login__inner {
+    width: 100%;
+  }
+  .pop-up-reg__email,
+  .pop-up-reg__name,
+  .pop-up-reg__password,
+  .pop-up-login__email,
+  .pop-up-login__password {
+    height: 40px;
+    padding: 0 15px 0 57px;
+    font-size: 14px;
+    line-height: 19px;
+    &::placeholder {
+      font-size: 14px;
+      line-height: 19px;
+    }
+  }
+  .pop-up-reg__input-icon,
+  .pop-up-login__input-icon {
+    top: 33px;
+    left: 15px;
+  }
+  .pop-up-reg__label-checkbox {
+    font-size: 16px;
+    line-height: 22px;
+  }
+  .pop-up-reg__button {
+    width: 162px;
+    height: 43px;
+    font-size: 17px;
+    line-height: 23px;
+    padding: 9px 50px;
+  }
+  .pop-up-login__button {
+    width: 145px;
+    height: 43px;
+    font-size: 17px;
+    line-height: 23px;
+    padding: 9px 50px;
   }
   .menu__main {
     padding: 120px 10px 30px;
@@ -675,6 +740,13 @@
     margin: 10px 12px;
   }
 }
+@media (max-height: 600px) and (orientation: landscape) {
+  .pop-up-reg {
+    height: 100%;
+    padding: 10px 20px;
+    justify-content: center;
+  }
+}
 @media (max-height: 500px) and (orientation: landscape) {
   .menu__main {
     flex-direction: row-reverse;
@@ -683,6 +755,9 @@
   }
   .menu__item {
     margin: 7px 0;
+  }
+  .pop-up-reg__title {
+    margin-bottom: 20px;
   }
   .logo--mobile-menu {
     bottom: auto;
@@ -695,5 +770,61 @@
   }
   .menu__btn-item {
     margin-bottom: 15px;
+  }
+}
+@media (max-height: 400px) and (orientation: landscape) {
+  .pop-up-login {
+    height: 100%;
+    padding: 10px 20px;
+    justify-content: center;
+  }
+  .pop-up-login__title {
+    margin-bottom: 20px;
+  }
+  .pop-up-reg__title,
+  .pop-up-login__title {
+    font-size: 21px;
+    line-height: 29px;
+  }
+  .pop-up-reg__input-wrap,
+  .pop-up-login__input-wrap {
+    height: 55px;
+  }
+  .pop-up-reg__email,
+  .pop-up-reg__name,
+  .pop-up-reg__password,
+  .pop-up-login__email,
+  .pop-up-login__password {
+    height: 40px;
+    padding: 0 15px 0 57px;
+    font-size: 14px;
+    line-height: 19px;
+    &::placeholder {
+      font-size: 14px;
+      line-height: 19px;
+    }
+  }
+  .pop-up-reg__input-icon,
+  .pop-up-login__input-icon {
+    top: 33px;
+    left: 15px;
+  }
+  .pop-up-reg__label-checkbox {
+    font-size: 16px;
+    line-height: 22px;
+  }
+  .pop-up-reg__button {
+    width: 162px;
+    height: 43px;
+    font-size: 17px;
+    line-height: 23px;
+    padding: 9px 50px;
+  }
+  .pop-up-login__button {
+    width: 145px;
+    height: 43px;
+    font-size: 17px;
+    line-height: 23px;
+    padding: 9px 50px;
   }
 }

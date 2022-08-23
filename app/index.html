@@ -45,12 +45,52 @@
           </nav>
           <ul class="menu__btn-list">
             <li class="menu__btn-item">
-              <button class="menu__button menu__button--login">Login</button>
+              <button class="menu__button menu__button--login" data-fancybox data-src="#login">Login</button>
             </li>
             <li class="menu__btn-item">
-              <button class="menu__button">Sign Up</button>
+              <button class="menu__button" data-fancybox data-src="#reg">Sign Up</button>
             </li>
           </ul>
+          <div class="pop-up-reg" id="reg">
+            <div class="pop-up-reg__inner">
+              <h3 class="pop-up-reg__title">Create Account</h3>
+              <form class="pop-up-reg__form">
+                <div class="pop-up-reg__input-wrap">
+                  <img class="pop-up-reg__input-icon" src="images/popup-mail.svg" alt="popup-mail">
+                  <input class="pop-up-reg__email" type="email" placeholder="Your Email">
+                </div>
+                <div class="pop-up-reg__input-wrap">
+                  <img class="pop-up-reg__input-icon" src="images/popup-name.svg" alt="popup-mail">
+                  <input class="pop-up-reg__name" type="text" placeholder="Your Name">
+                </div>
+                <div class="pop-up-reg__input-wrap">
+                  <img class="pop-up-reg__input-icon" src="images/popup-password.svg" alt="popup-mail">
+                  <input class="pop-up-reg__password" type="password" placeholder="Enter Password">
+                </div>
+                <input class="pop-up-reg__checkbox" type="checkbox" id="agree">
+                <label class="pop-up-reg__label-checkbox" for="agree">I agree to all statements included in
+                  <a href="privacy-policy.html">Privacy Policy</a>
+                </label>
+                <button class="pop-up-reg__button" type="submit">Sign Up</button>
+              </form>
+            </div>
+          </div>
+          <div class="pop-up-login" id="login">
+            <div class="pop-up-login__inner">
+              <h3 class="pop-up-login__title">Login</h3>
+              <form class="pop-up-login__form">
+                <div class="pop-up-login__input-wrap">
+                  <img class="pop-up-login__input-icon" src="images/popup-mail.svg" alt="popup-mail">
+                  <input class="pop-up-login__email" type="email" placeholder="Your Email">
+                </div>
+                <div class="pop-up-login__input-wrap">
+                  <img class="pop-up-login__input-icon" src="images/popup-password.svg" alt="popup-mail">
+                  <input class="pop-up-login__password" type="password" placeholder="Enter Password">
+                </div>
+                <button class="pop-up-login__button" type="submit">Login</button>
+              </form>
+            </div>
+          </div>
           <a class="logo logo--mobile-menu" href="index.html">
             <img src="images/logo.png" alt="logo">
           </a>
