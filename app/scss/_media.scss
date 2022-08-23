@@ -756,6 +756,9 @@
   .menu__item {
     margin: 7px 0;
   }
+  .pop-up-reg {
+    justify-content: start;
+  }
   .pop-up-reg__title {
     margin-bottom: 20px;
   }
@@ -808,6 +811,9 @@
   .pop-up-login__input-icon {
     top: 33px;
     left: 15px;
+  }
+  .pop-up-reg__checkbox + .pop-up-reg__label-checkbox {
+    width: 100%;
   }
   .pop-up-reg__label-checkbox {
     font-size: 16px;
